@@ -1,3 +1,5 @@
 # js-tempreture-converter
 
-convert from and to celsius and fahrenheit
+A simple javascript app
+that converts tempreture
+from and to celsius and fahrenheit
