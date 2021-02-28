@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tempreture Conversion | Tarik Alyahya</title>
+    <link rel="shortcut icon" href="../logo64.png" />
+    <!-- Describe the page content -->
+    <meta
+      name="description"
+      content="An application to convert tempreture from and to celsius or fahrenheit"
+    />
+    <!-- Add less than 5 keywords that are relevant to the content -->
+    <meta
+      name="keywords"
+      content="tempreture conversion, celsius, fahrenheit, app"
+    />
+    <meta name="viewport" content="width=device-width scale-1" />
+    <!-- IMPORTANT: adjust the relative links as nessecary -->
+    <link rel="stylesheet" type="text/css" href="../styles/start-layout.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/tania-css.css" />
+    <script src="js/class-tempreture.js"></script>
+    <style></style>
+  </head>
+
+  <body>
+    <!--target="_blank" rel="noreferrer noopener"-->
+    <header id="site-top">
+      <a href="../index.html">gumbol.github.io</a>
+    </header>
+    <!-- The site main-nav menu -->
+    <nav class="navigate">
+      <!--	<a class="logo" href="../index.html">
+			  <img src="../logo64.png" alt="logo"></a>-->
+      <a href="blog.html">Articles</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="../about.html">About</a>
+    </nav>
+
+    <main>
+      <article
+        style="
+          background-color: rgb(207, 216, 207);
+          min-width: 320px;
+          width: 50%;
+          margin: 0 auto 10px;
+        "
+      >
+        <h2>Tempreture conversion app</h2>
+        <p>Enter a number between -1000 and 1000</p>
+        <input
+          style="padding: 10px; width: 99%; margin-bottom: 5px"
+          name="tempreture"
+          id="temp"
+          placeholder="Enter a number"
+          maxlength="5"
+          autocomplete="off"
+        />
+
+        <br />
+
+        <button style="width: 150px" onclick="f()">
+          Celsius To Fahrenheit
+        </button>
+
+        <button style="width: 150px" onclick="c()">
+          Fahrenheit To Celsius
+        </button>
+
+        <p id="result" style="font-size: 25px; margin-top: 20px"></p>
+        <a
+        class="button-style1"
+        href="https://github.com/gumbol/js-tempreture-converter"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Source code</a
+      >
+      </article>
+    </main>
+
+    <script src="js/temp-converter.js"></script>
+
+    <section class="blurb">
+      <img
+        class="my-avatar"
+        src="../me2-150w-02.webp"
+        width="150"
+        height="200"
+        alt="Me"
+      />
+
+      <div class="author-info">
+        <h3>About the author</h3>
+        <p>
+          Hi I am <a href="../about.html">Tarik</a>, I'm a web developer,
+          writer, and open-source creator. This website is my digital canvas — a
+          collection of the things I've learned and created over the years.
+        </p>
+
+        <nav>
+          <a
+            class="coffee-btn"
+            href="https://ko-fi.com/tyah2"
+            target="_blank"
+            rel="noreferrer"
+            >Buy me a coffee
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="site-links">
+        <a href="blog.html">Articles</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+
+      <nav class="out-links">
+        <a
+          href="https://github.com/gumbol"
+          title="Github mascot"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../media/icons/github-32x-01.png" alt="GitHub" width="32" />
+        </a>
+      </nav>
+
+      <p id="sig">&copy; 2020 Tyah</p>
+    </footer>
+  </body>
+</html>
