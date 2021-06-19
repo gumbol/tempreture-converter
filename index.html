@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tempreture Converter | Tarik Alyahya</title>
+    <link rel="shortcut icon" href="logo64.png" />
+    <!-- Describe the page content -->
+    <meta
+      name="description"
+      content="An application to convert tempreture from and to celsius or fahrenheit"
+    />
+    <!-- Add less than 5 keywords that are relevant to the content -->
+    <meta
+      name="keywords"
+      content="tempreture conversion, celsius, fahrenheit, app, demo"
+    />
+    <meta name="viewport" content="width=device-width scale-1" />
+    <!-- IMPORTANT: adjust the relative links as nessecary -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<no-script>
+Javascript needs to be enabled
+</no-script>
+    <script src="scripts/class-tempreture.js"></script>
+    <style>
+      article {
+        background-color: rgb(207, 216, 207);
+        min-width: 320px;
+        width: 50%;
+        margin: 0 auto 10px;
+        padding-bottom: 80px;
+      }
+
+      input {
+        padding: 10px;
+        width: 99%;
+        margin-bottom: 5px;
+      }
+
+       #result {
+        position: absolute;
+        font-size: 25px;
+        margin-top: 20px;
+        text-align: center;
+        top: 410px;
+        left:0;
+
+      }
+
+
+
+    #site-top {
+      margin-bottom: 30px;
+      background: var(--sf-img-6) 0 10% / auto 80% no-repeat;
+      min-height: 9em;
+      border-bottom: 1px solid;
+    }
+    #site-top a {
+      margin-top: -10px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <!--target="_blank" rel="noreferrer noopener"-->
+
+    <!--main header"-->
+    <header id="site-top">
+      <a href="https://gumbol.github.io/">gumbol.github.io</a>
+    </header>
+
+    <main>
+      <article>
+        <h2>Tempreture converter app</h2>
+        <p>Enter a number between -1000 and 1000</p>
+
+        <input
+          id="input"
+          name="tempreture"
+          placeholder="Enter a number"
+          maxlength="5"
+          autocomplete="off"
+        />
+
+        <br />
+
+        <button style="width: 150px" onclick="toF()">To &Fopf;</button>
+
+        <button style="width: 150px" onclick="toC()">To &Cfr;</button>
+
+  <p id="result"></p>
+
+
+        
+
+      </article>
+    </main>
+
+    <script src="scripts/temp-converter-v2.js"></script>
+
+  
+
+    <footer id="global">
+      <div>
+        <nav class="site-links">
+          Author: <a href="https://gumbol.github.io/about">Tarik Alyahya</a>
+<!-- add the source code link-->
+          <a
+            class="btn1"
+            href="https://github.com/gumbol/tempreture-converter"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Source code</a
+          >
+
+          <a href="https://gumbol.github.io/projects.html"
+            >More projects</a
+          >
+        </nav>
+
+        <nav class="out-links">
+          <a
+            href="https://github.com/gumbol"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/github-01-32x.png"
+              alt="my github page"
+              width="32"
+            />
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
